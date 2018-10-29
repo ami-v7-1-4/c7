@@ -19,7 +19,7 @@ build:
     - ruby --version
     - gcloud version
     - aws --version
-    - packer --version
+    - packer.io --version
     - jq --version
     - kubectl version --client
     - docker --version
