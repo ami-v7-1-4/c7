@@ -24,6 +24,9 @@ build:
     - kubectl version --client
     - docker --version
     - docker pull shippabledocker/sample_node_pvt:ecr
+    - EXPECTED_DOCKER_VERSION="18.03.1-ce"
+    - |
+      [ $(docker version --format {{.Server.Version}}) == "$EXPECTED_DOCKER_VERSION" ]
     
 integrations:
     
